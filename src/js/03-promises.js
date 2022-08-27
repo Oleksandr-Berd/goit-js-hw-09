@@ -33,7 +33,7 @@ function createSubmit(evt) {
   evt.preventDefault();
   let delay = Number(inpDelay);
   let step = Number(inpStep);
-  amount = inpAmount;
+  let amount = inpAmount;
 
   let position = 0;
 
