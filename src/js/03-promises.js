@@ -31,11 +31,10 @@ function createAmount(evt) {
 
 function createSubmit(evt) {
   evt.preventDefault();
-  delay = Number(inpDelay);
-  step = Number(inpStep);
+  let delay = Number(inpDelay);
+  let step = Number(inpStep);
   amount = inpAmount;
 
-  console.log(typeof delay);
   let position = 0;
 
   const timer = setInterval(function createPromise() {
