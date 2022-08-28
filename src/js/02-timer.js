@@ -68,8 +68,8 @@ const options = {
           minutes.textContent = addLeadingZero(newTimeComp.minutes);
           hours.textContent = addLeadingZero(newTimeComp.hours);
           days.textContent = addLeadingZero(newTimeComp.days);
-
-          if (newDelta === 0) {
+          console.log(newDelta);
+          if (newDelta <= 1000) {
             clearInterval(timer);
           }
         }, 1000);
