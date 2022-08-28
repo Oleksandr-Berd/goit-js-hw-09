@@ -6,6 +6,7 @@ const butStart = document.querySelector('[data-start]');
 const butStop = document.querySelector('[data-stop');
 const body = document.querySelector('body');
 let colorSwitch = null;
+butStop.disabled = true;
 
 butStart.addEventListener('click', () => {
   colorSwitch = setInterval(() => {
@@ -13,9 +14,11 @@ butStart.addEventListener('click', () => {
   }, 1000);
 
   butStart.disabled = true;
+  butStop.disabled = false;
 });
 
 butStop.addEventListener('click', () => {
   clearInterval(colorSwitch);
   butStart.disabled = false;
+  butStop.disabled = true;
 });
